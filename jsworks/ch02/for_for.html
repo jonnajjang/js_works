@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩for문</title>
+    <script>
+        //5행 5열 테이블 -"가"출력
+        //부모요소가 사용한 알파벳이 자식요소에서 중복되면 오류가 발생. 겹치는 알파벳이 없도록 주의할것
+        for(var i=0; i<5;i++){
+            for(var j=0; j<5;j++){
+                document.write("네모")
+            }
+            document.write("<br>")
+        }
+
+        //부모요소+1 값을 입력하면 점점 늘어난다.
+        for(var i=0; i<5;i++){
+            for(var j=0; j<i+1;j++){
+                document.write("커져욧")
+            }
+            document.write("<br>")
+        }
+        for(var i=0; i<5;i++){
+            for(var j=0; j<5-i;j++){
+                document.write("커져욧")
+            }
+            document.write("<br>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

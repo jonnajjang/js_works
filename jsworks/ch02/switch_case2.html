@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch_case문</title>
+    <style>
+        body{
+            background-color: rgb(54, 66, 177);
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        p{
+            text-shadow: 2px 1px 2px #222;
+            font-size: 2em;
+        }
+        b{
+            color: yellow;
+            text-shadow: 2px 2px 2px #222;
+            font-size: 1.2em; /*p태그에서 폰트 크기를 2em으로 바꿨기 때문에
+            해당 태그의 1.2em은 2em기준으로 1.2em이 추가로 적용된다.*/
+        }
+    </style>
+    <script>
+        let session = prompt("관심 그거를 말해보세요 1-마케팅 2-개발 3-디자인");
+
+
+        switch(session){
+            case 1:
+            document.write("<p><b>마케팅</b>입니다</p>");break;
+            case 2:
+            document.write("<p><b>개발</b>입니다</p>");break;
+            case 3:
+            document.write("<p><b>디자인</b>입니다</p>");break;
+            default:
+            documeny.write("<p>잘못입력하셨습니다</p>");break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
