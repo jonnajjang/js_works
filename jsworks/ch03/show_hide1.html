@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 숨기기/보이기</title>
+    <style>
+        img{margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <!-- button 일때는 type=button을 꼭 쓰지 않아도 되지만
+    submit을 사용할땐 타입 버튼을 꼭  써주자. -->
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+    <div>
+    <img src="../../html_cssworks/images/flower.jpg" alt="보라꽃" id="pic">
+    </div>
+    <script>
+        function show(){
+            document.getElementById("pic").style.display="block";
+        }
+        function hide(){
+            document.getElementById("pic").style.display="none";
+        }
+    </script>
+</body>
+</html>
