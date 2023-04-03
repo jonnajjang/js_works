@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>버튼 토글 기능</title>
+    <style>
+        button{margin:10px}
+        .pic{display: none;}
+    </style>
+</head>
+<body>
+    <!-- 아이디 넣으세요~~-->
+    <button onclick="showHide()" id="btnText">보이기</button>
+    <div>
+    <img src="../../html_cssworks/images/flower1.jpg" alt="꽃" id="pic"class="pic">
+    </div>
+    <script>
+        function showHide(){
+            //let sw=0; 상태변수 생략해도 됨.(필수요소일 경우가 존재하긴 함.)
+            let img= document.getElementById("pic");
+            let btnText=document.getElementById("btnText");
+            if(img.style.display=="block"){
+                img.style.display="none";
+                btnText.innerText="보이기";
+                //sw=1;
+            }else{
+                img.style.display="block";
+                btnText.innerText="숨기기";
+                //sw=0;
+            }
+        }
+    </script>
+</body>
+</html>
