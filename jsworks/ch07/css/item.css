@@ -1,0 +1,14 @@
+#wrapper{
+    width: 600px;margin: 50px auto;
+}
+form{
+    background-color: #0094ff;padding: 30px;
+    text-align: center;
+}
+input{width: 420px; padding: 10px;}
+.btnAdd{width: 60px; padding: 10px;}
+ul{margin: 0; padding: 0;}
+ul li{list-style: none; padding: 10px 10px 10px 40px;
+     background: #eee; position: relative;}
+.close{position: absolute; top: 0; right: 0; margin: 10px;}
+.close:hover{background-color: rgb(108, 108, 197); color: #fff;cursor: pointer;}
